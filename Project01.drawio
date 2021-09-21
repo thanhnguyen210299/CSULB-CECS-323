@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-09-21T00:16:06.518Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="zTsu20QervrQX0LGox8D" version="15.2.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-09-21T00:55:06.042Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="zdUC0cdygsTsQp1OMykU" version="15.2.1" type="github" pages="4">
   <diagram id="8RiAjywS743xeEZnv0D9" name="UML">
-    <mxGraphModel dx="1531" dy="1799" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1786" dy="1799" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -157,29 +157,26 @@
         <mxCell id="zWwajwa_Bz5TJ9QkabY7-6" value="Serves" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="460" y="488" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="rd00pua133PAIsLDVrsv-2" value="" style="endArrow=none;html=1;" parent="1" edge="1">
+        <mxCell id="rd00pua133PAIsLDVrsv-2" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1" target="rd00pua133PAIsLDVrsv-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="430" y="240" as="sourcePoint" />
             <mxPoint x="520" y="100" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="rd00pua133PAIsLDVrsv-3" value="Order Phase" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="520" y="51" width="160" height="70" as="geometry" />
+          <mxGeometry x="670" y="40" width="160" height="48" as="geometry" />
         </mxCell>
         <mxCell id="rd00pua133PAIsLDVrsv-4" value="+ Phase name: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="rd00pua133PAIsLDVrsv-3" vertex="1">
           <mxGeometry y="26" width="160" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="uVkq-jSCMNs2S2AcnnBl-3" value="+ Phase time: dateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rd00pua133PAIsLDVrsv-3">
-          <mxGeometry y="48" width="160" height="22" as="geometry" />
         </mxCell>
         <mxCell id="rd00pua133PAIsLDVrsv-8" value="0..*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="425" y="180" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="rd00pua133PAIsLDVrsv-9" value="1..*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="505" y="130" width="40" height="20" as="geometry" />
+          <mxGeometry x="620" y="60" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uVkq-jSCMNs2S2AcnnBl-4" value="Passes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="480" y="180" width="50" height="20" as="geometry" />
+          <mxGeometry x="570" y="150" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="RQalryXo_mKFnMx8zDlX-6" value="" style="endArrow=none;html=1;exitX=-0.008;exitY=-0.12;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="A_Lu8tEpIEGmUkHRbT_P-55">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -215,11 +212,23 @@
             <mxPoint x="550" y="245" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="nRTwjbZ9DKLV0hxAjGuT-1" value="" style="endArrow=none;dashed=1;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="70" as="sourcePoint" />
+            <mxPoint x="550" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nRTwjbZ9DKLV0hxAjGuT-2" value="Phase Line" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="465" y="19" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="nRTwjbZ9DKLV0hxAjGuT-3" value="+ Phase Time: timestamp" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="nRTwjbZ9DKLV0hxAjGuT-2">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="YOanlC0nU-Tt_Swuh7hs" name="Description">
-    <mxGraphModel dx="1036" dy="408" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1042" dy="408" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="lt8vvM9qazHMe1-OMZdn-0" />
         <mxCell id="lt8vvM9qazHMe1-OMZdn-1" parent="lt8vvM9qazHMe1-OMZdn-0" />
@@ -506,7 +515,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Second Relation Scheme" id="jSefDOUxhfujl8e_MUom">
-    <mxGraphModel dx="1787" dy="815" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2083" dy="815" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="jbNu8X6-3QvtPz7yIJ_0-0" />
         <mxCell id="jbNu8X6-3QvtPz7yIJ_0-1" parent="jbNu8X6-3QvtPz7yIJ_0-0" />
