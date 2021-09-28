@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-27T18:19:33.305Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="nTf5lDZxd11kPGEIg5LN" version="15.2.1" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-09-28T16:32:30.994Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="1MsEd-kPQ4i0ESSpVaCp" version="15.2.1" type="github" pages="3">
   <diagram id="pU9noNdpJDCD_Wi6QvRS" name="UML diagram">
     <mxGraphModel dx="486" dy="532" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -267,7 +267,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="WRjP-baQkNVBpT1SMX3n" name="Second Relation Scheme">
-    <mxGraphModel dx="694" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1574" dy="781" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="xYLDhSnCG7m429_A0hxn-0" />
         <mxCell id="xYLDhSnCG7m429_A0hxn-1" parent="xYLDhSnCG7m429_A0hxn-0" />
@@ -393,19 +393,19 @@
         <mxCell id="dqO0iWiISuZjHlEPgq5y-38" value="Meal ID" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="xYLDhSnCG7m429_A0hxn-1">
           <mxGeometry x="40" y="80" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="dqO0iWiISuZjHlEPgq5y-39" value="Candidate Key" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="xYLDhSnCG7m429_A0hxn-1">
+        <mxCell id="dqO0iWiISuZjHlEPgq5y-39" value="Candidate Key" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="xYLDhSnCG7m429_A0hxn-1">
           <mxGeometry x="120" y="110" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="BPdz8FsEPnMorciVPlto-0" value="Chore ID" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="xYLDhSnCG7m429_A0hxn-1">
           <mxGeometry x="40" y="200" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="BPdz8FsEPnMorciVPlto-1" value="Candidate Key" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="xYLDhSnCG7m429_A0hxn-1">
+        <mxCell id="BPdz8FsEPnMorciVPlto-1" value="Candidate Key" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="xYLDhSnCG7m429_A0hxn-1">
           <mxGeometry x="120" y="230" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="BPdz8FsEPnMorciVPlto-2" value="Scout ID" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="xYLDhSnCG7m429_A0hxn-1">
           <mxGeometry x="40" y="320" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="BPdz8FsEPnMorciVPlto-3" value="Candidate Key" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="xYLDhSnCG7m429_A0hxn-1">
+        <mxCell id="BPdz8FsEPnMorciVPlto-3" value="Candidate Key" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="xYLDhSnCG7m429_A0hxn-1">
           <mxGeometry x="120" y="350" width="240" height="30" as="geometry" />
         </mxCell>
         <mxCell id="oWGzbSlq1C6SY8FaRHXc-0" value="1..1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xYLDhSnCG7m429_A0hxn-1">
