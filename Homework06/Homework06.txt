@@ -1,0 +1,42 @@
+-- 1. Select each member ID and the number of other members they have recommended, ordered by member ID. Do not include members who were not recommended by anyone.
+
+SELECT R.MEMID, COUNT(M.MEMID) AS COUNT
+FROM MEMBERS R INNER JOIN MEMBERS M ON R.MEMID = M.RECOMMENDEDBY
+GROUP BY R.MEMID
+ORDER BY R.MEMID;
+
+-- 2. Select all facilities with more than 1000 slots booked. Your output should consist of facility id and slots, sorted by facility id.
+
+SELECT F.FACID, SUM(B.SLOTS) AS TOTAL_SLOTS
+FROM FACILITIES F INNER JOIN BOOKINGS B ON F.FACID = B.FACID
+GROUP BY F.FACID
+HAVING SUM(B.SLOTS) > 1000
+ORDER BY F.FACID;
+
+-- 3. Select the facilities with the largest total number of booked slots. Make sure to select ALL facilities with this total, in case there is a tie. (There is not in this database, but pretend there could be.)
+
+SELECT F1.FACID, SUM(B1.SLOTS) AS TOTAL_SLOTS
+FROM FACILITIES F1 RIGHT JOIN BOOKINGS B1 ON F1.FACID = B1.FACID
+GROUP BY F1.FACID
+HAVING SUM(B1.SLOTS) >= ALL(SELECT SUM(B2.SLOTS)
+                            FROM FACILITIES F2 INNER JOIN BOOKINGS B2 ON F2.FACID = B2.FACID
+                            GROUP BY F2.FACID);
+
+-- 4. Select each member's surname, firstname, memid, and the starttime of their first (hint: smallest) booking on or after September 1, 2012, ordered by memid.
+
+SELECT M.SURNAME, M.FIRSTNAME, B1.MEMID, MIN(B1.STARTTIME) AS FIRSTBOOKING
+FROM MEMBERS M INNER JOIN BOOKINGS B1 ON M.MEMID = B1.MEMID
+WHERE DATE(STARTTIME) >= '2012-09-01'
+GROUP BY B1.MEMID, M.SURNAME, M.FIRSTNAME
+ORDER BY B1.MEMID;
+
+
+-- 5. Select the counts of how many bookings were made for each year and month, sorted by the year and month.
+
+SELECT M AS START_MONTH, Y AS START_YEAR, COUNT(*) AS TOTAL_BOOKINGS
+FROM (
+         SELECT MONTH(STARTTIME) AS M, YEAR(STARTTIME) AS Y, SLOTS
+         FROM BOOKINGS
+     ) AS TEMP
+GROUP BY Y, M
+ORDER BY START_YEAR, START_MONTH;
