@@ -1,0 +1,51 @@
+-- JOIN
+-- Natural Join
+
+-- 18. Display every order
+-- along with the details of that order
+-- for order numbers 10270, 10272, 10279 (23)
+-- Hint: this can be done two ways. Try both of them.
+-- Which is easier if you have a large number of selection criteria?
+-- First way
+SELECT *
+FROM ORDERS NATURAL JOIN ORDERDETAILS
+WHERE (ORDERNUMBER = 10270 OR ORDERNUMBER = 10272 OR ORDERNUMBER = 10279);
+-- Second way
+SELECT *
+FROM ORDERS NATURAL JOIN ORDERDETAILS
+WHERE ORDERNUMBER IN (10270, 10272, 10279);
+
+-- 19. List of productlines, the productline’s text description and vendors
+-- that supply the products in that productline
+-- ordered by productLine and productVendor. (65)
+SELECT DISTINCT PRODUCTLINE, TEXTDESCRIPTION, PRODUCTVENDOR
+FROM PRODUCTS NATURAL JOIN PRODUCTLINES
+ORDER BY PRODUCTLINE, PRODUCTVENDOR;
+
+-- Inner Join
+
+-- 20. Select customers
+-- that live in the same state as one of our offices
+-- ordered by customerName (26)
+SELECT CUSTOMERS.*
+FROM CUSTOMERS INNER JOIN OFFICES ON CUSTOMERS.STATE = OFFICES.STATE
+ORDER BY CUSTOMERNAME;
+
+-- 21. Select customers
+-- that live in the same state as their employee representative works (26)
+SELECT *
+FROM CUSTOMERS
+    INNER JOIN EMPLOYEES ON CUSTOMERS.SALESREPEMPLOYEENUMBER = EMPLOYEES.EMPLOYEENUMBER
+    INNER JOIN OFFICES ON EMPLOYEES.OFFICECODE = OFFICES.OFFICECODE
+WHERE OFFICES.STATE = CUSTOMERS.STATE;
+
+-- Multi-join
+-- 22. Select customerName, orderDate, quantityOrdered, productLine, productName
+-- for all orders made and shipped in 2015 (444)
+SELECT CUSTOMERNAME, ORDERDATE, QUANTITYORDERED, P.PRODUCTLINE, PRODUCTNAME
+FROM CUSTOMERS AS C
+    INNER JOIN ORDERS AS O ON C.CUSTOMERNUMBER = O.CUSTOMERNUMBER
+    INNER JOIN ORDERDETAILS AS OD ON OD.ORDERNUMBER = O.ORDERNUMBER
+    INNER JOIN PRODUCTS AS P ON OD.PRODUCTCODE = P.PRODUCTCODE
+    INNER JOIN PRODUCTLINES PL on PL.PRODUCTLINE = P.PRODUCTLINE
+WHERE YEAR(ORDERDATE)= 2015 AND YEAR(SHIPPEDDATE) = 2015;
